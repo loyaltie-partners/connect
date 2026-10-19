@@ -15,6 +15,12 @@ Prices are in USD. Most products ship within the US only; offer non-US buyers on
 **How much do I earn?**
 5% of the whole basket (Standard, open to everyone) or 10% (Featured partners, by application), on new and returning orders through you. Subscription reorders don't earn.
 
+**Can I show your images and descriptions?**
+Yes. You may use product names, descriptions, images, prices and links in your product, including images served from `cdn.loyaltie.com` (hotlinking is fine). Keep prices and availability current by refreshing the catalog.
+
+**How long until I get my partner ID?**
+24 to 48 hours after you apply. Until then, your links still work for the buyer.
+
 **Which brands are in it?**
 Independent brands from every platform: Shopify, WooCommerce, Wix, Squarespace and their own sites. Every order is sold and guaranteed through Loyaltie.
 
