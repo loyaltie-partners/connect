@@ -1,11 +1,11 @@
 # Loyaltie Connect
 
-> Add day-to-day shopping to your agent or app: open catalog of independent brands, agent skill and cart links. No sign-up or key. Builders can earn 5 to 10% of the whole basket.
+> Add day-to-day shopping to your agent or app: open catalog of independent brands, agent skill and cart links. No sign-up or key. Partners earn 5% (Standard) or 10% (Featured) of the whole basket.
 
-- [skill.md](https://github.com/loyaltie-partners/connect/blob/main/skill.md): set up any agent to shop Loyaltie
-- [Quickstart](https://github.com/loyaltie-partners/connect/blob/main/README.md)
-- [Catalog fields](https://github.com/loyaltie-partners/connect/blob/main/docs/catalog.md)
-- [Cart links](https://github.com/loyaltie-partners/connect/blob/main/docs/cart-links.md)
-- [Earn](https://github.com/loyaltie-partners/connect/blob/main/docs/earn.md)
-- [FAQ](https://github.com/loyaltie-partners/connect/blob/main/docs/faq.md)
+- [skill.md](https://raw.githubusercontent.com/loyaltie-partners/connect/main/skill.md): set up any agent to shop Loyaltie
+- [Quickstart](https://raw.githubusercontent.com/loyaltie-partners/connect/main/README.md)
+- [Catalog fields](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/catalog.md)
+- [Cart links](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/cart-links.md)
+- [Earn](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/earn.md)
+- [FAQ](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/faq.md)
 - [Start building](https://loyaltie.com/sell/connect-start-building)
