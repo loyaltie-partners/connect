@@ -6,7 +6,7 @@ Your integration doesn't change. You wrap Loyaltie links (a product, category or
 
 ## 1. Get your partner ID
 
-Fill in the short form at [loyaltie.com/sell/connect-apply](https://loyaltie.com/sell/connect-apply). We register you on Impact and send you your partner ID and tracking link. Tracking and payouts are managed on Impact.
+Fill in the short form at [loyaltie.com/sell/connect-apply](https://loyaltie.com/sell/connect-apply). We approve applications within 24 to 48 hours, register you on Impact and send you your partner ID and tracking link. Tracking and payouts are managed on Impact.
 
 | Tier | Rate | Who |
 | --- | --- | --- |
