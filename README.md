@@ -4,14 +4,16 @@ Add day-to-day shopping to your agent or app. Your users buy from independent ma
 
 **Everything here is open. No account, sign-up or API key.** Add a partner ID only when you want to earn.
 
+**Building an agent:** steps 1 to 3. **Building an app, site or newsletter:** skip the skill and use the catalog and cart links.
+
 | What | Status | Docs |
 | --- | --- | --- |
 | Full product catalog (CSV, refreshed every 6 hours, yours to keep) | Live | [Catalog](docs/catalog.md) |
 | Agent skill: one line to set up any agent | Live | [skill.md](skill.md) |
 | Cart link: send the buyer to a ready cart | Live | [Cart links](docs/cart-links.md) |
-| Earn 5 to 10% of the whole basket | Live | [Earn](docs/earn.md) |
+| Earn 5% (Standard) or 10% (Featured) of the whole basket | Live | [Earn](docs/earn.md) |
 | MCP server | Next | |
-| Checkout inside your product (UCP) | Invite only | |
+| Checkout inside your product (UCP) | Early access | |
 
 ## Quickstart
 
@@ -53,14 +55,14 @@ const earn = `https://loyaltiecomltd.sjv.io/c/${PARTNER_ID}/4008618/57003`
   + `?u=${encodeURIComponent(cart)}&sharedid=conv8812`;
 ```
 
-That's the whole integration. When the buyer clicks your link, Impact records the click with your partner ID and the IDs you added, and the order that follows is attributed to you.
+Prices are in USD. That's the whole integration. When the buyer clicks your link, Impact records the click with your partner ID and the IDs you added, and the order that follows is attributed to you.
 
 ## Give your agent the skill
 
 Paste this into any agent that can read a URL:
 
 ```
-Read https://loyaltie.com/skill.md and use it to find and buy
+Read https://raw.githubusercontent.com/loyaltie-partners/connect/main/skill.md and use it to find and buy
 products from independent brands on Loyaltie for me.
 ```
 
