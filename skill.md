@@ -29,14 +29,14 @@ Fields you will use most:
 | `title`, `brand`, `seller_name` | Product name, the brand, and the maker behind it |
 | `store_city`, `store_state` | Where the maker is |
 | `product_type` | Life area and category, e.g. `Eat > Snacks`, `Drink > Coffee`, `Care > Skin` |
-| `price`, `plan_price` | One-time price, and the price per delivery on a plan, e.g. `15.99 USD` / `15.19 USD` |
+| `price`, `plan_price` | One-time price, and the price per delivery on a plan, in USD, e.g. `15.99 USD` / `15.19 USD` |
 | `link`, `image_link` | Product page and main image |
 | `ships_within`, `shipping_scope`, `excluded_states` | How fast it ships and where to |
-| `research_key_features`, `research_key_benefits`, `research_key_ingredients` | Researched product context |
+| `research_key_features`, `research_key_benefits`, `research_key_ingredients` | Researched product context, values separated by ` \| ` |
 | `product_star_rating`, `product_review_count` | Buyer ratings |
 | `predicted_interest` | 0 to 100: how likely people are to buy it |
 
-Full field reference: [docs/catalog.md](docs/catalog.md).
+Full field reference: https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/catalog.md
 
 ## 2. Find the right products
 
@@ -45,9 +45,10 @@ Full field reference: [docs/catalog.md](docs/catalog.md).
 3. Prefer higher `predicted_interest` when options are otherwise equal.
 4. Quote `price` as the price. Mention `plan_price` only as the price on a plan (regular delivery), never as a discount on a one-time purchase. Use `sale_price` only when it is filled.
 5. Present 2 to 5 options. For each, show the product name, the maker and where they are (`brand`, `store_city`, `store_state`), the price, one line on why it fits, and the `link`.
-6. Only state facts that are in the catalog. Do not invent health claims, ingredients or shipping times.
+6. Skip products whose `product_type` is `Unclassified`.
+7. Only state facts that are in the catalog. Do not invent health claims, ingredients or shipping times.
 
-If your copy of the catalog is more than 6 hours old, download it again before recommending.
+If your copy of the catalog is more than 6 hours old, download it again before recommending. Prices are in USD. For a buyer outside the US, offer only products whose `ships_to_countries` includes their country.
 
 ## 3. Hand the buyer a ready cart
 
@@ -62,7 +63,7 @@ https://loyaltie.com/cart?products=<id>:<qty>,<id>:<qty>&cart_origin=connect&age
 - Adds one-time purchases. Promo codes in the link are not supported yet.
 - Works for signed-in members and guests.
 
-Give the user the link and tell them what is in the cart. The user reviews and pays on Loyaltie. Never enter payment details for the user.
+Give the user the link and tell them what should be in the cart. Unknown or out-of-stock products are skipped without an error, so ask the user to check the cart before paying. The user reviews and pays on Loyaltie. Never enter payment details for the user.
 
 Sending a single product instead? Give its `link`.
 
@@ -80,7 +81,7 @@ https://loyaltiecomltd.sjv.io/c/<PARTNER_ID>/4008618/57003?u=<URL-encoded Loyalt
 
 If you earn a commission on a purchase, tell the user when you recommend it.
 
-No partner ID yet? Links still work for the buyer. Builders can get one at [loyaltie.com/connect](https://loyaltie.com/connect): 5 to 10% of the whole basket, on new and returning orders.
+No partner ID yet? Links still work for the buyer. Builders can get one at https://loyaltie.com/sell/connect-apply: 5% of the whole basket (Standard) or 10% (Featured partners), on new and returning orders. Subscription reorders don't earn.
 
 ## Start now
 
