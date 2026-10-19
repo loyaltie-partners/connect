@@ -1,12 +1,12 @@
 # Earn
 
-Earn 5 to 10% of the whole basket on every order you drive, including makers you never linked to. New and returning orders count. Subscription reorders don't.
+Earn 5% (Standard) or 10% (Featured partners) of the whole basket on every order you drive, including makers you never linked to. New and returning orders count. Subscription reorders don't.
 
 Your integration doesn't change. You wrap Loyaltie links (a product, category or cart page) in your tracking link. Tracking happens on the click: Impact records it with your partner ID and the IDs you add, and the order that follows is attributed to you. Nothing to install.
 
 ## 1. Get your partner ID
 
-Fill in the short form at [loyaltie.com/connect](https://loyaltie.com/connect). We register you on Impact and send you your partner ID and tracking link. Tracking and payouts are managed on Impact.
+Fill in the short form at [loyaltie.com/sell/connect-apply](https://loyaltie.com/sell/connect-apply). We register you on Impact and send you your partner ID and tracking link. Tracking and payouts are managed on Impact.
 
 | Tier | Rate | Who |
 | --- | --- | --- |
