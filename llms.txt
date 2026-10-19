@@ -1,0 +1,11 @@
+# Loyaltie Connect
+
+> Add day-to-day shopping to your agent or app: open catalog of independent brands, agent skill and cart links. No sign-up or key. Builders can earn 5 to 10% of the whole basket.
+
+- [skill.md](https://github.com/loyaltie-partners/connect/blob/main/skill.md): set up any agent to shop Loyaltie
+- [Quickstart](https://github.com/loyaltie-partners/connect/blob/main/README.md)
+- [Catalog fields](https://github.com/loyaltie-partners/connect/blob/main/docs/catalog.md)
+- [Cart links](https://github.com/loyaltie-partners/connect/blob/main/docs/cart-links.md)
+- [Earn](https://github.com/loyaltie-partners/connect/blob/main/docs/earn.md)
+- [FAQ](https://github.com/loyaltie-partners/connect/blob/main/docs/faq.md)
+- [Start building](https://loyaltie.com/sell/connect-start-building)
