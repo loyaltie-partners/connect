@@ -25,7 +25,7 @@ curl -L "https://loyaltie-product-feeds.s3.amazonaws.com/feeds/catalog/products-
 | `image_link` | Main image |
 | `additional_image_link` | More images, comma-separated |
 | `price` | One-time price with currency, e.g. `15.99 USD` |
-| `sale_price` | Subscriber price: what the buyer pays per delivery on a plan (the one-time price minus `plan_discount`), e.g. `15.19 USD`. Not a temporary sale. |
+| `sale_price` | A temporary sale price, when there is one. Empty otherwise. |
 | `availability` | Always `in stock` (the file lists only buyable products) |
 | `brand` | The brand that makes it |
 | `gtin`, `mpn` | Barcode and maker part number, where the maker has them |
@@ -55,8 +55,8 @@ curl -L "https://loyaltie-product-feeds.s3.amazonaws.com/feeds/catalog/products-
 
 | Field | What it is |
 | --- | --- |
+| `plan_price` | Price per delivery when bought on a plan (regular delivery), e.g. `15.19 USD` |
 | `plan_discount` | Discount (%) when bought on a plan |
-| `monthly_price` | The same subscriber price, as a number |
 
 ### Context and proof
 
