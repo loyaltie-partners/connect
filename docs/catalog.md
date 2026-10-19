@@ -24,13 +24,13 @@ curl -L "https://loyaltie-product-feeds.s3.amazonaws.com/feeds/catalog/products-
 | `link` | Product page on Loyaltie |
 | `image_link` | Main image |
 | `additional_image_link` | More images, comma-separated |
-| `price` | One-time price with currency, e.g. `15.99 USD` |
+| `price` | One-time price with currency, e.g. `15.99 USD`. All prices are in USD. |
 | `sale_price` | A temporary sale price, when there is one. Empty otherwise. |
 | `availability` | Always `in stock` (the file lists only buyable products) |
 | `brand` | The brand that makes it |
 | `gtin`, `mpn` | Barcode and maker part number, where the maker has them |
 | `google_product_category` | Google taxonomy path |
-| `product_type` | Loyaltie path: life area > category > type, e.g. `Eat > Snacks > Jerky`. Life areas: Eat, Drink, Care, Home, Feel Good, Pets, Kids |
+| `product_type` | Loyaltie path: life area > category > type, e.g. `Eat > Snacks > Jerky`. Life areas: Eat, Drink, Care, Home, Feel Good, Pets, Kids. A few products are `Unclassified` while we categorize them: skip them when matching by category. |
 
 ### Maker
 
@@ -62,9 +62,9 @@ curl -L "https://loyaltie-product-feeds.s3.amazonaws.com/feeds/catalog/products-
 
 | Field | What it is |
 | --- | --- |
-| `research_key_features` | Researched key features (`|`-separated) |
-| `research_key_benefits` | Researched benefits (`|`-separated) |
-| `research_key_ingredients` | Researched key ingredients (`|`-separated) |
+| `research_key_features` | Researched key features. Several values, separated by ` \| ` |
+| `research_key_benefits` | Researched benefits. Several values, separated by ` \| ` |
+| `research_key_ingredients` | Researched key ingredients. Several values, separated by ` \| ` |
 | `product_star_rating`, `product_review_count` | Rating and review count, where there are reviews |
 
 ### Predicted interest
@@ -76,6 +76,6 @@ curl -L "https://loyaltie-product-feeds.s3.amazonaws.com/feeds/catalog/products-
 ## Using it well
 
 - Match the user's need on `title`, `product_type` and the `research_*` fields.
-- Filter by shipping before recommending: `excluded_states` and `ships_to_countries`.
+- Filter by shipping before recommending: `excluded_states` and `ships_to_countries`. Most products ship within the US only; for a buyer outside the US, offer only products whose `ships_to_countries` includes their country.
 - Show the maker and where they are (`brand`, `store_city`, `store_state`). Buyers respond to it.
 - State only what is in the catalog. No health claims.
