@@ -4,16 +4,22 @@
 No. The catalog, the skill and cart links are open. You need a partner ID only to earn.
 
 **Can I store the catalog?**
-Yes. Keep it, index it and rank it your way. It refreshes every 6 hours, so pull a fresh copy at least daily and check availability before sending a buyer.
+Yes. Keep it, index it and rank it your way. It refreshes every 6 hours. The file lists only products that are in stock, so a fresh copy is your availability check.
 
 **Do I need an AI agent?**
-No. Any app, site or newsletter can use the catalog and cart links.
+No. Any app, site or newsletter can use the catalog and cart links. Skip the skill.
+
+**What about buyers outside the US?**
+Prices are in USD. Most products ship within the US only; offer non-US buyers only products whose `ships_to_countries` includes their country. Checkout on Loyaltie lets the buyer set their country.
+
+**How much do I earn?**
+5% of the whole basket (Standard, open to everyone) or 10% (Featured partners, by application), on new and returning orders through you. Subscription reorders don't earn.
 
 **Which brands are in it?**
 Independent brands from every platform: Shopify, WooCommerce, Wix, Squarespace and their own sites. Every order is sold and guaranteed through Loyaltie.
 
 **Can my agent pay inside my product?**
-Not yet. The cart link hands the buyer a ready cart on Loyaltie, where they check out once across every maker. Checkout inside your product is next, by invitation.
+Not yet. The cart link hands the buyer a ready cart on Loyaltie, where they check out once across every maker. Checkout inside your product is in early access.
 
 **How does attribution work?**
 Tracking happens when the buyer clicks your tracking link. Impact records the click with your partner ID and the IDs you add (`sharedid`, `subId1`), and the Loyaltie link carries your `agent_id`. The order that follows is attributed to you: the whole basket, on new and returning orders.
