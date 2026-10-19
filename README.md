@@ -66,6 +66,10 @@ Read https://raw.githubusercontent.com/loyaltie-partners/connect/main/skill.md a
 products from independent brands on Loyaltie for me.
 ```
 
+## Using the content
+
+You may use everything in the catalog in your product: product names, descriptions, images, prices and links, including images served from `cdn.loyaltie.com` (hotlinking is fine). Keep prices and availability current by refreshing the catalog.
+
 ## More
 
 - [Catalog fields](docs/catalog.md)
