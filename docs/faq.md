@@ -9,8 +9,11 @@ Yes. Keep it, index it and rank it your way. It refreshes every 6 hours. The fil
 **Do I need an AI agent?**
 No. Any app, site or newsletter can use the catalog and cart links. Skip the skill.
 
+**Why does a product show as unavailable?**
+Almost always because it doesn't ship to the buyer's location. Most products ship within the US only, so a buyer outside the US sees them as unavailable. Match the buyer's country and state against `shipping_scope`, `ships_to_states` and `ships_to_countries` before recommending.
+
 **What about buyers outside the US?**
-Prices are in USD. Most products ship within the US only; offer non-US buyers only products whose `ships_to_countries` includes their country. Checkout on Loyaltie lets the buyer set their country.
+Prices are in USD. Offer them only `US + international` products whose `ships_to_countries` includes their country. Checkout on Loyaltie lets the buyer set their country.
 
 **How much do I earn?**
 5% of the whole basket (Standard, open to everyone) or 10% (Featured partners, by application), on new and returning orders through you. Subscription reorders don't earn.
