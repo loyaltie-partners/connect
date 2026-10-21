@@ -16,6 +16,7 @@ https://loyaltie.com/cart?products=<id>:<qty>,<id>:<qty>&cart_origin=connect&age
 
 - Up to 20 products, quantity up to 99 each. Quantity defaults to 1 (`<id>` alone is fine).
 - Duplicates are merged. Products already in the buyer's cart aren't doubled.
+- Only add products that ship to the buyer's address (see [the catalog](catalog.md)). A product that doesn't ship there shows as unavailable in their cart.
 - Unknown or out-of-stock products are skipped. If nothing valid remains, the buyer lands on the marketplace.
 - The link doesn't report back which products were added. To keep the cart accurate, use a catalog copy less than 6 hours old, and tell the user what should be in the cart so they can check it before paying.
 - Adds one-time purchases.
