@@ -31,7 +31,13 @@ import Papa from "papaparse";
 const csv = await fetch("https://loyaltie-product-feeds.s3.amazonaws.com/feeds/catalog/products-connect.csv").then(r => r.text());
 const { data: products } = Papa.parse(csv, { header: true });
 
+const buyer = { country: "US", state: "NY" };   // where the order will be delivered
+const shipsTo = p => buyer.country === "US"
+  ? p.ships_to_states.split(";").includes(buyer.state)
+  : p.ships_to_countries.split(";").includes(buyer.country);
+
 const picks = products
+  .filter(shipsTo)                                  // always: only what ships to the buyer
   .filter(p => p.product_type.startsWith("Eat > Snacks"))
   .sort((a, b) => b.predicted_interest - a.predicted_interest)
   .slice(0, 3);
