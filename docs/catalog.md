@@ -45,8 +45,8 @@ curl -L "https://loyaltie-product-feeds.s3.amazonaws.com/feeds/catalog/products-
 | Field | What it is |
 | --- | --- |
 | `shipping_scope` | `US only` or `US + international` |
-| `ships_to_states`, `excluded_states` | US states it ships to and doesn't (`;`-separated) |
-| `ships_to_countries` | Countries it ships to, for international makers |
+| `ships_to_states`, `excluded_states` | US states it ships to and doesn't (two-letter codes, `;`-separated) |
+| `ships_to_countries` | Countries it ships to outside the US (two-letter ISO codes, `;`-separated). Empty for US-only products. |
 | `ships_within` | Handling time: `1-3 days`, `3-5 days`, `5-7 days`, `7-14 days` (may be empty) |
 | `state_shipping_rate`, `country_shipping_rate`, `world_shipping_rate` | Shipping rate by zone |
 | `state_free_threshold`, `country_free_threshold`, `world_free_threshold` | Free-shipping threshold by zone |
@@ -75,7 +75,7 @@ curl -L "https://loyaltie-product-feeds.s3.amazonaws.com/feeds/catalog/products-
 
 ## Using it well
 
-- Match the user's need on `title`, `product_type` and the `research_*` fields.
-- Filter by shipping before recommending: `excluded_states` and `ships_to_countries`. Most products ship within the US only; for a buyer outside the US, offer only products whose `ships_to_countries` includes their country.
+- **Match the buyer's location first.** A product the buyer can't receive shows as unavailable at their address. US buyer: keep products whose `ships_to_states` includes their state. Buyer outside the US: keep only `US + international` products whose `ships_to_countries` includes their country. Most products ship within the US only.
+- Then match the user's need on `title`, `product_type` and the `research_*` fields.
 - Show the maker and where they are (`brand`, `store_city`, `store_state`). Buyers respond to it.
 - State only what is in the catalog. No health claims.
