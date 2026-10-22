@@ -1,6 +1,6 @@
 # Earn
 
-Earn 5% (Standard) or 10% (Featured partners) of the whole basket on every order you drive, including makers you never linked to. New and returning orders count. Subscription reorders don't.
+Earn up to 10% of the whole basket on every order you drive, including makers you never linked to. New and returning orders count. Subscription reorders don't.
 
 Your integration doesn't change. You wrap Loyaltie links (a product, category or cart page) in your tracking link. Tracking happens on the click: Impact records it with your partner ID and the IDs you add, and the order that follows is attributed to you. Nothing to install.
 
@@ -10,8 +10,8 @@ Fill in the short form at [loyaltie.com/sell/connect-apply](https://loyaltie.com
 
 | Tier | Rate | Who |
 | --- | --- | --- |
+| Featured | 10% | Builders who integrate Loyaltie into their product, content or media, by application |
 | Standard | 5% | Everyone |
-| Featured | 10% | Content, media and product-integrated partners, by application |
 | Invitation | Ask us | Above Featured |
 
 ## 2. Wrap your links
