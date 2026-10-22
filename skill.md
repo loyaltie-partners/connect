@@ -94,7 +94,7 @@ https://loyaltiecomltd.sjv.io/c/<PARTNER_ID>/4008618/57003?u=<URL-encoded Loyalt
 
 If you earn a commission on a purchase, tell the user when you recommend it.
 
-No partner ID yet? Links still work for the buyer. Builders can get one at https://loyaltie.com/sell/connect-apply: 5% of the whole basket (Standard) or 10% (Featured partners), on new and returning orders. Subscription reorders don't earn.
+No partner ID yet? Links still work for the buyer. Builders can get one at https://loyaltie.com/sell/connect-apply: up to 10% of the whole basket (10% for Featured partners who integrate Loyaltie into their product, 5% Standard), on new and returning orders. Subscription reorders don't earn.
 
 ## Start now
 
