@@ -16,7 +16,7 @@ Almost always because it doesn't ship to the buyer's location. Most products shi
 Prices are in USD. Offer them only `US + international` products whose `ships_to_countries` includes their country. Checkout on Loyaltie lets the buyer set their country.
 
 **How much do I earn?**
-5% of the whole basket (Standard, open to everyone) or 10% (Featured partners, by application), on new and returning orders through you. Subscription reorders don't earn.
+Up to 10% of the whole basket, on new and returning orders through you. Builders who integrate Loyaltie into their product, content or media qualify for Featured, at 10%. Standard, open to everyone, is 5%. Subscription reorders don't earn.
 
 **Can I show your images and descriptions?**
 Yes. You may use product names, descriptions, images, prices and links in your product, including images served from `cdn.loyaltie.com` (hotlinking is fine). Keep prices and availability current by refreshing the catalog.
