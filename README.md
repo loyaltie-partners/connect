@@ -11,7 +11,7 @@ Add day-to-day shopping to your agent or app. Your users buy from independent ma
 | Full product catalog (CSV, refreshed every 6 hours, yours to keep) | Live | [Catalog](docs/catalog.md) |
 | Agent skill: one line to set up any agent | Live | [skill.md](skill.md) |
 | Cart link: send the buyer to a ready cart | Live | [Cart links](docs/cart-links.md) |
-| Earn 5% (Standard) or 10% (Featured) of the whole basket | Live | [Earn](docs/earn.md) |
+| Earn up to 10% of the whole basket | Live | [Earn](docs/earn.md) |
 | MCP server | Next | |
 | Checkout inside your product (UCP) | Early access | |
 
