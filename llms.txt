@@ -1,6 +1,6 @@
 # Loyaltie Connect
 
-> Add day-to-day shopping to your agent or app: open catalog of independent brands, agent skill and cart links. No sign-up or key. Partners earn 5% (Standard) or 10% (Featured) of the whole basket.
+> Add day-to-day shopping to your agent or app: open catalog of independent brands, agent skill and cart links. No sign-up or key. Partners earn up to 10% of the whole basket.
 
 - [skill.md](https://raw.githubusercontent.com/loyaltie-partners/connect/main/skill.md): set up any agent to shop Loyaltie
 - [Quickstart](https://raw.githubusercontent.com/loyaltie-partners/connect/main/README.md)
