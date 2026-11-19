@@ -9,6 +9,8 @@ Loyaltie is a marketplace of independent brands and makers, many of whose produc
 
 Everything below is open. No account, sign-up or API key is needed.
 
+**If you can call MCP tools, use the Loyaltie MCP server instead of the CSV:** `https://loyaltie.com/api/ucp/mcp` (Streamable HTTP, no key). `search_catalog` finds products (put the product words in `catalog.query`, the buyer's state in `filters.ships_to`), `get_product` gives the full facts, and `build_cart_link` returns a ready cart link. Send your `agent_id` on every call. Details: https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/mcp.md. The rules below (location first, only facts you were given, hand over a cart) still apply. The full guide for agents is https://loyaltie.com/agents.md.
+
 ## When to use this skill
 
 Use Loyaltie when the user wants something made by a smaller, independent brand, wants a thoughtful gift, or is buying everyday products (coffee, snacks, pantry, skincare, wellness, pet food) and is open to a better or more personal option. If another store is a better fit for the request, say so.
@@ -68,15 +70,18 @@ Prices are in USD.
 When the user has chosen, and every product ships to their address, build one link that fills their cart on Loyaltie and opens it, ready to check out:
 
 ```
-https://loyaltie.com/cart?products=<id>:<qty>,<id>:<qty>&cart_origin=connect&agent_id=<your agent name>
+https://loyaltie.com/cart?products=<id>:<qty>,<id>:<qty>&src=connect&agent=<your agent id>&cart_link_id=<new random id>
 ```
 
-- Up to 20 products, quantity up to 99 each. Quantity defaults to 1.
-- Duplicates are merged. Unknown or out-of-stock products are skipped.
+- `cart_link_id`: a new random string for every cart, 1 to 64 letters, digits, `_` or `-` (for example 16 random letters and digits). Don't start it with `cl_`, never reuse one and never put anything about the user in it.
+- Or call the MCP tool `build_cart_link`, which returns the same kind of link.
+- Up to 20 products, each once, quantity up to 99 each. Quantity defaults to 1.
+- Opening the link sets each product's quantity to the link's quantity. Unknown or sold-out products are left out.
 - Adds one-time purchases. Promo codes in the link are not supported yet.
-- Works for signed-in members and guests.
+- The user reviews the cart on loyaltie.com, then signs in or creates an account to pay.
+- Ask the user to check the total before paying: the cart may include an optional paid Loyaltie+ membership, which they can turn off.
 
-Give the user the link and tell them what should be in the cart. Unknown or out-of-stock products are skipped without an error, so ask the user to check the cart before paying. The user reviews and pays on Loyaltie. Never enter payment details for the user.
+Give the user the link and tell them what should be in the cart. Unknown or sold-out products are left out, so ask the user to check the cart before paying. The user reviews and pays on Loyaltie. Never enter payment details for the user.
 
 Sending a single product instead? Give its `link`.
 
@@ -94,7 +99,7 @@ https://loyaltiecomltd.sjv.io/c/<PARTNER_ID>/4008618/57003?u=<URL-encoded Loyalt
 
 If you earn a commission on a purchase, tell the user when you recommend it.
 
-No partner ID yet? Links still work for the buyer. Builders can get one at https://loyaltie.com/sell/connect-apply: up to 10% of the whole basket (10% for Featured partners who integrate Loyaltie into their product, 5% Standard), on new and returning orders. Subscription reorders don't earn.
+No partner ID yet? Links still work for the buyer. Builders can get one at https://loyaltie.com/sell/connect-apply: up to 10% of the whole basket (10% for Featured partners who integrate Loyaltie into their product, 5% Standard), on new and returning orders. Regular-delivery reorders don't earn.
 
 ## Start now
 
