@@ -1,6 +1,32 @@
 # The catalog
 
-One CSV file with every product you can buy on Loyaltie right now. Header row first, one row per product, UTF-8. Field names follow Google Shopping where one exists.
+The whole catalog is open in two formats. Use whichever fits; both list the same products.
+
+- **JSON files on loyaltie.com**, usually refreshed within the hour: a short index, makers, and a full card per product. The same data the [MCP server](mcp.md) reads.
+- **One CSV file**, refreshed every 6 hours, with Google Shopping field names. Fields below.
+
+## JSON files
+
+Start with the manifest: it lists every file with its size and checksum and says when the catalog last changed.
+
+| File | What it is |
+| --- | --- |
+| [`/agents/catalog/manifest.json`](https://loyaltie.com/agents/catalog/manifest.json) | Product and maker counts, file list, URL patterns |
+| [`/agents/catalog/index.jsonl`](https://loyaltie.com/agents/catalog/index.jsonl) | One short line per product: `id`, name (`t`), `maker` (store link), `slug`, maker location (`loc`), category (`cat`), one-time `price` in cents, in stock (`avail`), has regular delivery (`plan`), a one-line summary and a photo |
+| [`/agents/catalog/makers.jsonl`](https://loyaltie.com/agents/catalog/makers.jsonl) | One line per maker, including the US states it ships to (`ships_to`) |
+| `/agents/catalog/{category}/{subcategory}.jsonl` | A full product card per line for one category |
+| `/agents/products/{id}.json` | One product card: price, stock, dispatch time, regular-delivery offers, maker, disclosures, product context and a cart link template |
+| `/agents/products/{maker}/{slug}/context.md` | The same product as readable Markdown |
+
+All on `https://loyaltie.com`, no key, and readable from a browser page too. Prices are in cents. Add `agent=<your agent id>` to the URLs you fetch. The full guide is [agents.md](https://loyaltie.com/agents.md).
+
+```sh
+curl -O https://loyaltie.com/agents/catalog/index.jsonl
+```
+
+## CSV file
+
+Header row first, one row per product, UTF-8. Field names follow Google Shopping where one exists.
 
 ```sh
 curl -L "https://loyaltie-product-feeds.s3.amazonaws.com/feeds/catalog/products-connect.csv" -o loyaltie-products.csv
