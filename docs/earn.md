@@ -1,6 +1,6 @@
 # Earn
 
-Earn up to 10% of the whole basket on every order you drive, including makers you never linked to. New and returning orders count. Subscription reorders don't.
+Earn up to 10% of the whole basket on every order you drive, including makers you never linked to. New and returning orders count. Regular-delivery reorders don't.
 
 Your integration doesn't change. You wrap Loyaltie links (a product, category or cart page) in your tracking link. Tracking happens on the click: Impact records it with your partner ID and the IDs you add, and the order that follows is attributed to you. Nothing to install.
 
@@ -39,12 +39,12 @@ function earnLink(loyaltieUrl, clickId) {
     + `?u=${encodeURIComponent(loyaltieUrl)}&sharedid=${clickId}`;
 }
 
-earnLink("https://loyaltie.com/cart?products=234ec9ed-a19a-470e-b277-01f7ad7cbb06:2&cart_origin=connect&agent_id=my-app", "conv8812");
+earnLink("https://loyaltie.com/cart?products=234ec9ed-a19a-470e-b277-01f7ad7cbb06:2&src=connect&agent=my-app&cart_link_id=k3n9x2p7q1w8e5r4", "conv8812");
 ```
 
 ## 3. The click is tracked, the order is yours
 
-When the buyer clicks your tracking link, Impact records the click with your partner ID, your `sharedid` and `subId1`, and sends the buyer on to the Loyaltie page in `u`. Keep `agent_id` inside the Loyaltie link too, so the cart page knows which agent sent it. The order that follows is attributed to you: the whole basket. You see it in your Impact account, and postbacks return your `sharedid`.
+When the buyer clicks your tracking link, Impact records the click with your partner ID, your `sharedid` and `subId1`, and sends the buyer on to the Loyaltie page in `u`. Keep `agent=<your agent id>` inside the Loyaltie link too (the [MCP server](mcp.md) adds it to every link it returns when you send `agent_id`), so we know which agent sent it. The order that follows is attributed to you: the whole basket. You see it in your Impact account, and postbacks return your `sharedid`.
 
 ## Good to know
 
