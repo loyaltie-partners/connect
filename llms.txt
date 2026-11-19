@@ -1,11 +1,13 @@
 # Loyaltie Connect
 
-> Add day-to-day shopping to your agent or app: open catalog of independent brands, agent skill and cart links. No sign-up or key. Partners earn up to 10% of the whole basket.
+> Build day-to-day shopping from independent brands into your agent or app: MCP server, open catalog and cart links. No sign-up or key. Partners earn up to 10% of the whole basket.
 
+- [MCP server](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/mcp.md): https://loyaltie.com/api/ucp/mcp, 8 tools from search to cart
+- [agents.md](https://loyaltie.com/agents.md): the full guide for agents
 - [skill.md](https://raw.githubusercontent.com/loyaltie-partners/connect/main/skill.md): set up any agent to shop Loyaltie
 - [Quickstart](https://raw.githubusercontent.com/loyaltie-partners/connect/main/README.md)
-- [Catalog fields](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/catalog.md)
+- [Catalog files and fields](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/catalog.md)
 - [Cart links](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/cart-links.md)
 - [Earn](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/earn.md)
 - [FAQ](https://raw.githubusercontent.com/loyaltie-partners/connect/main/docs/faq.md)
-- [Start building](https://loyaltie.com/sell/connect-start-building)
+- [Start building](https://loyaltie.com/connect)
