@@ -1,6 +1,6 @@
 # Earn
 
-Earn up to 10% of the whole basket on every order you drive, including makers you never linked to. New and returning orders count. Regular-delivery reorders don't.
+Earn up to 10% of the whole basket on every order you drive, including makers you never linked to. New orders count, and so do repeat purchases your agent proactively drove.
 
 Your integration doesn't change. You wrap Loyaltie links (a product, category or cart page) in your tracking link. Tracking happens on the click: Impact records it with your partner ID and the IDs you add, and the order that follows is attributed to you. Nothing to install.
 
@@ -10,9 +10,11 @@ Fill in the short form at [loyaltie.com/sell/connect-apply](https://loyaltie.com
 
 | Tier | Rate | Who |
 | --- | --- | --- |
-| Featured | 10% | Builders who integrate Loyaltie into their product, content or media, by application |
-| Standard | 5% | Everyone |
+| Featured | 10% | Builders who integrate Loyaltie into their product, content or media. Same application form; after a short conversation we move you up to 10% |
+| Standard | 5% | Everyone who applies and is approved |
 | Invitation | Ask us | Above Featured |
+
+**Payouts:** monthly, at the start of each month, in USD, once your balance reaches $100. Payouts and the commercial terms run through Impact.
 
 ## 2. Wrap your links
 
@@ -49,5 +51,4 @@ When the buyer clicks your tracking link, Impact records the click with your par
 ## Good to know
 
 - Orders are attributed once you have your partner ID. Links without it still work for the buyer.
-- If your agent recommends products, tell users when you earn a commission.
 - Questions: partners@loyaltie.com
