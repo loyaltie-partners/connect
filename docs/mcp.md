@@ -8,7 +8,7 @@ https://loyaltie.com/api/ucp/mcp
 
 - **Streamable HTTP. No sign-in, no API key.**
 - **Follows Google's Universal Commerce Protocol (UCP).** Our UCP profile: [loyaltie.com/.well-known/ucp](https://loyaltie.com/.well-known/ucp). Server card: [loyaltie.com/.well-known/mcp/server-card.json](https://loyaltie.com/.well-known/mcp/server-card.json).
-- **No tool pays or places an order.** The buyer reviews the cart on loyaltie.com, signs in or creates an account, and pays there.
+- **No tool pays or places an order.** The buyer reviews the cart on loyaltie.com and pays there with their email, shipping address and payment; checkout creates their account, so there is no separate sign-up.
 - **No CLI to install.** The MCP server is the integration.
 
 ## Add it
@@ -121,7 +121,7 @@ Put the product words in `catalog.query` (a short phrase: every word must match 
 }
 ```
 
-For both: 1 to 20 products, quantity 1 to 99, each product once, one-time purchases. Give the person the link, tell them they sign in or create an account on loyaltie.com to pay, and ask them to check the total: the cart may include an optional paid Loyaltie+ membership, which they can turn off. Totals cover the items only; shipping and any discount are added at checkout.
+For both: 1 to 20 products, quantity 1 to 99, each product once, one-time purchases. Give the person the link, tell them they pay on loyaltie.com with their email, shipping address and payment (checkout creates their account, no separate sign-up), and ask them to check the total: the cart may include an optional paid Loyaltie+ membership, which they can turn off. Totals cover the items only; shipping and any discount are added at checkout.
 
 ## Limits
 
