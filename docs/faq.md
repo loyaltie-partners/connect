@@ -19,7 +19,7 @@ Almost always because it doesn't ship to the buyer's location. Most products shi
 Prices are in USD. Offer them only `US + international` products whose `ships_to_countries` includes their country. Checkout on Loyaltie lets the buyer set their country.
 
 **How much do I earn?**
-Up to 10% of the whole basket, on new and returning orders through you. Builders who integrate Loyaltie into their product, content or media qualify for Featured, at 10%. Standard, open to everyone, is 5%. Regular-delivery reorders don't earn.
+Up to 10% of the whole basket, on new orders through you and on repeat purchases your agent proactively drove. Standard is 5%. Builders who integrate Loyaltie into their product, content or media can move up to Featured, at 10%: it is the same application, followed by a short conversation. Payouts are monthly, at the start of each month, in USD, once your balance reaches $100, through Impact.
 
 **Can I show your images and descriptions?**
 Yes. You may use product names, descriptions, images, prices and links in your product, including images served from `cdn.loyaltie.com` (hotlinking is fine). Keep prices and availability current by refreshing the catalog.
@@ -34,7 +34,7 @@ Independent brands from every platform: Shopify, WooCommerce, Wix, Squarespace a
 Not yet. The cart link hands the buyer a ready cart on Loyaltie, where they check out once across every maker. Checkout inside your product is in early access.
 
 **How does attribution work?**
-Tracking happens when the buyer clicks your tracking link. Impact records the click with your partner ID and the IDs you add (`sharedid`, `subId1`), and the Loyaltie link carries your `agent` ID. The order that follows is attributed to you: the whole basket, on new and returning orders.
+Tracking happens when the buyer clicks your tracking link. Impact records the click with your partner ID and the IDs you add (`sharedid`, `subId1`), and the Loyaltie link carries your `agent` ID. The order that follows is attributed to you: the whole basket, on new orders and on repeat purchases your agent proactively drove.
 
 **Is there an MCP server?**
 Yes, live at `https://loyaltie.com/api/ucp/mcp`: search, product facts, makers and carts as 8 tools. See [MCP server](mcp.md).
